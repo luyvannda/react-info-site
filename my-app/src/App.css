@@ -40,4 +40,36 @@ body {
   color: #DEEBF8;
   font-weight: 600;
   padding-right: 2rem;
+}
+
+.main-container {
+  background-color: rgb(48, 48, 48);
+  display: flex;
+  justify-content: space-between;
+  width: 115vw;
+  min-height: 88vh;
+  overflow-x: hidden;
+  padding: 2.5rem;
+}
+.main-container .main-left h2 {
+  color: white;
+}
+.main-container .main-left ul {
+  padding: 1rem 1rem 1rem 2rem;
+  list-style: none;
+}
+.main-container .main-left ul li {
+  color: #DEEBF8;
+  padding-bottom: 1rem;
+}
+.main-container .main-left ul li::before {
+  content: "\\2022";
+  color: red;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+.main-container .main-logo-right {
+  height: 40vh;
 }/*# sourceMappingURL=App.css.map */

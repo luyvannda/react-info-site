@@ -1,7 +1,8 @@
 $main-black: #21222A;
-$main-light-dark: rgb(93, 93, 93);
+$main-light-dark: rgb(48, 48, 48);
 $main-ocean-blue: #61DAFB;
-$main-white: #DEEBF8;
+$main-light: #DEEBF8;
+$main-white: white;
 
 * {
   padding: 0;
@@ -47,9 +48,48 @@ body {
   .nav-right {
     p {
       font-size: 1.2rem;
-      color: $main-white;
+      color: $main-light;
       font-weight: 600;
       padding-right: 2rem;
     }
+  }
+}
+
+.main-container {
+  background-color: $main-light-dark;
+  display: flex;
+  justify-content: space-between;
+  width: 115vw;
+  min-height: 88vh;
+  overflow-x: hidden;
+  padding: 2.5rem;
+
+  .main-left {
+    h2 {
+      color: $main-white;
+    }
+
+    ul {
+      padding: 1rem 1rem 1rem 2rem;
+      list-style: none;
+
+      li {
+        color: $main-light;
+        padding-bottom: 1rem;
+
+        &::before {
+          content: "\\2022";
+          color: red;
+          font-weight: bold;
+          display: inline-block;
+          width: 1em;
+          margin-left: -1em;
+        }
+      }
+    }
+  }
+
+  .main-logo-right {
+    height: 40vh;
   }
 }

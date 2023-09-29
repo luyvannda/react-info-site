@@ -1,3 +1,42 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+*::before,
+* ::after {
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 16px;
+}
+
 body {
   font-family: "Inter", sans-serif;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  height: 12vh;
+}
+.nav-container .nav-left {
+  display: flex;
+  align-items: center;
+}
+.nav-container .nav-left h1 {
+  font-size: 2rem;
+  color: #53C1DE;
+}
+.nav-container .nav-left .nav-logo {
+  width: 10vw;
+}
+.nav-container .nav-right p {
+  font-size: 1.2rem;
+  color: white;
+  font-weight: 600;
+  padding-right: 2rem;
 }/*# sourceMappingURL=App.css.map */

@@ -1,3 +1,54 @@
+$main-black: black;
+$main-light-dark: rgb(93, 93, 93);
+$main-ocean-blue: #53C1DE;
+$main-white: white;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+
+  &::before,
+  ::after {
+    box-sizing: inherit;
+  }
+}
+
+html {
+  font-size: 16px;
+}
+
 body {
   font-family: 'Inter', sans-serif;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $main-black;
+  height: 12vh;
+
+  .nav-left {
+    display: flex;
+    align-items: center;
+
+    h1 {
+      font-size: 2rem;
+      color: $main-ocean-blue;
+    }
+
+    .nav-logo {
+      width: 10vw;
+    }
+  }
+
+  .nav-right {
+    p {
+      font-size: 1.2rem;
+      color: $main-white;
+      font-weight: 600;
+      padding-right: 2rem;
+    }
+  }
 }

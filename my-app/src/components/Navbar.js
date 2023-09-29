@@ -2,7 +2,7 @@ import logo from "./logo.svg"
 
 export default function Navbar() {
   return (
-    <div className="nav-container">
+    <nav className="nav-container">
       <div className="nav-left">
         <img className="nav-logo" src={logo} alt="A react logo"></img>
         <h1>ReactFacts</h1>
@@ -10,6 +10,6 @@ export default function Navbar() {
       <div className="nav-right">
         <p>React Course - Project 1</p>
       </div>
-    </div>
+    </nav>
   )
 }

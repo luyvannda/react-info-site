@@ -43,32 +43,32 @@ body {
 }
 
 .main-container {
-  background-color: rgb(48, 48, 48);
+  background-color: #282D35;
   display: flex;
   justify-content: space-between;
   width: 115vw;
   min-height: 88vh;
   overflow-x: hidden;
-  padding: 2.5rem;
+  padding: 3.5625rem 1.6875rem;
 }
 .main-container .main-left h2 {
   color: white;
+  font-size: clamp(2.4375rem, 1.8vw + 0.2rem, 3rem);
+  letter-spacing: -0.05em;
 }
 .main-container .main-left ul {
+  margin-top: 2.875rem;
   padding: 1rem 1rem 1rem 2rem;
-  list-style: none;
 }
 .main-container .main-left ul li {
   color: #DEEBF8;
-  padding-bottom: 1rem;
+  line-height: 1.1875rem;
+  padding-block: 1rem;
+  font-size: clamp(1rem, 1.6vw + 0.2rem, 2rem);
 }
-.main-container .main-left ul li::before {
-  content: "\\2022";
-  color: red;
-  font-weight: bold;
-  display: inline-block;
-  width: 1em;
-  margin-left: -1em;
+.main-container .main-left ul li::marker {
+  font-size: clamp(1.4rem, 0.1vw + 0.05rem, 1.8rem);
+  color: #61DAFB;
 }
 .main-container .main-logo-right {
   height: 40vh;

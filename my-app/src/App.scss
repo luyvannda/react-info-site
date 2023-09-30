@@ -1,5 +1,5 @@
 $main-black: #21222A;
-$main-light-dark: rgb(48, 48, 48);
+$main-light-dark: #282D35;
 $main-ocean-blue: #61DAFB;
 $main-light: #DEEBF8;
 $main-white: white;
@@ -62,30 +62,32 @@ body {
   width: 115vw;
   min-height: 88vh;
   overflow-x: hidden;
-  padding: 2.5rem;
+  padding: 3.5625rem 1.6875rem;
 
   .main-left {
     h2 {
       color: $main-white;
+      font-size: clamp(2.4375rem, 1.8vw + 0.2rem, 3rem);
+      letter-spacing: -0.05em;
     }
 
     ul {
+      margin-top: 2.875rem;
       padding: 1rem 1rem 1rem 2rem;
-      list-style: none;
 
       li {
         color: $main-light;
-        padding-bottom: 1rem;
+        line-height: 1.1875rem;
+        padding-block: 1rem;
+        font-size: clamp(1rem, 1.6vw + 0.2rem, 2rem);
 
-        &::before {
-          content: "\\2022";
-          color: red;
-          font-weight: bold;
-          display: inline-block;
-          width: 1em;
-          margin-left: -1em;
+        &::marker {
+          font-size: clamp(1.4rem, 0.1vw + 0.05rem, 1.8rem);
+          color: $main-ocean-blue;
         }
       }
+
+
     }
   }
 

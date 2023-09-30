@@ -1,5 +1,3 @@
-import logo from "./logo.svg"
-
 export default function Main() {
   return (
     <div className="main-container">
@@ -13,8 +11,8 @@ export default function Main() {
           <li>Powers thousands of enterprise apps, including
             mobile apps</li>
         </ul>
+
       </div>
-      <img className="main-logo-right" src={logo} alt="A React logo hidden in half"></img>
     </div>
   )
 }

@@ -4,6 +4,7 @@ $main-ocean-blue: #61DAFB;
 $main-light: #DEEBF8;
 $main-white: white;
 
+
 * {
   padding: 0;
   margin: 0;
@@ -21,6 +22,8 @@ html {
 
 body {
   font-family: 'Inter', sans-serif;
+  width: 100vw;
+  overflow: hidden;
 }
 
 .nav-container {
@@ -57,12 +60,18 @@ body {
 
 .main-container {
   background-color: $main-light-dark;
+  background-image: url(components/logo.svg);
+  background-size: 45%;
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-position-y: 60%;
+  width: 129vw;
   display: flex;
   justify-content: space-between;
-  width: 115vw;
-  min-height: 88vh;
-  overflow-x: hidden;
+  min-height: 92vh;
   padding: 3.5625rem 1.6875rem;
+
+
 
   .main-left {
     h2 {
@@ -86,12 +95,7 @@ body {
           color: $main-ocean-blue;
         }
       }
-
-
     }
   }
 
-  .main-logo-right {
-    height: 40vh;
-  }
 }
